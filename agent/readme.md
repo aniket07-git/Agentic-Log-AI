@@ -1,3 +1,4 @@
+
 # Smart Log Analyzer
 
 An AI-powered log analysis tool that helps developers quickly identify, understand, and fix errors in application logs. The tool offers two modes of analysis - a fast basic review and a comprehensive in-depth review with code fixes.
@@ -35,18 +36,38 @@ An AI-powered log analysis tool that helps developers quickly identify, understa
    cd log-analyzer
    pip install -r requirements.txt
 
-Usage
 
-Basic Command
+## Interactive Options
 
-bash
-python new_log_analyzer.py
-Options
+When you run the tool, you'll go through these steps:
 
-Flag	Description	Default
--f, --log-file	Analyze specific log file	None
--d, --directory	Directory to search for logs	Current dir
--r, --recursive	Search for logs recursively	False
---max-depth	Max recursion depth	4
--e, --extensions	Log file extensions to look for	.log, .txt
--g, --grep	Filter logs by pattern	None
+1. **Mode Selection**:
+- `1`: Get quick analysis of errors without code access
+- `2`: Full analysis with code examination and fix suggestions
+
+2. **Action Selection**:
+   - `1`: Analyze all found log files
+- `2`: Choose specific files from the list
+- `3`: Quit the analyzer
+
+3. **For In-Depth Mode**:
+- View diffs of proposed changes
+- Confirm before applying fixes
+- Option to continue to next file
+
+## Command Line Flags
+
+| Flag | Description | Example | Default |
+|------|-------------|---------|---------|
+| `-f`, `--log-file` | Analyze specific log file | `-f error.log` | None |
+| `-d`, `--directory` | Directory to search for logs | `-d ./logs` | Current dir |
+| `-r`, `--recursive` | Search for logs recursively | `-r` | False |
+| `--max-depth` | Max recursion depth | `--max-depth 3` | 4 |
+| `-e`, `--extensions` | Log file extensions to look for | `-e .log -e .txt` | .log, .txt |
+| `-g`, `--grep` | Filter logs by pattern | `-g "Timeout"` | None |
+
+## Full Usage Examples
+
+1. **Basic quick analysis** (fastest):
+```bash
+python long_analyzer.py -d ./logs --extensions .log .err
