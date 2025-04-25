@@ -1,8 +1,5 @@
 # Smart Log Analyzer
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-
 An AI-powered log analysis tool that helps developers quickly identify, understand, and fix errors in application logs. The tool offers two modes of analysis - a fast basic review and a comprehensive in-depth review with code fixes.
 
 ## Features
@@ -43,7 +40,7 @@ Usage
 Basic Command
 
 bash
-python long_analyzer.py
+python new_log_analyzer.py
 Options
 
 Flag	Description	Default
