@@ -1,0 +1,11 @@
+streamlit>=1.31.0
+pandas>=2.2.0
+plotly>=5.18.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+langchain-community>=0.0.10
+watchdog>=3.0.0
+rich==13.7.0
+click==8.1.7
+grafana-loki-client==0.1.0
+matplotlib>=3.8.0
