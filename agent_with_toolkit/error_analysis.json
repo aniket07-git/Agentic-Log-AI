@@ -1,0 +1,72 @@
+[
+  {
+    "log_level": "ERROR",
+    "error_type": "FileNotFoundError",
+    "error_message": "[Errno 2] No such file or directory: 'non_existent_file.txt'",
+    "file_location": "testing\\test.py",
+    "line_number": 32,
+    "error_explanation": "The specified file does not exist in the directory, leading to this error when attempting to open it.",
+    "related_code": "with open('non_existent_file.txt', 'r') as f:",
+    "fixes": [
+      "Ensure the file exists before attempting to open it."
+    ],
+    "code_suggestion": "if os.path.exists('non_existent_file.txt'): with open('non_existent_file.txt', 'r') as f:",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "KeyError",
+    "error_message": "'b'",
+    "file_location": "testing\\test.py",
+    "line_number": 40,
+    "error_explanation": "This error occurs when trying to access a key that does not exist in a dictionary.",
+    "related_code": "value = d['b']",
+    "fixes": [
+      "Check if the key exists in the dictionary before accessing it."
+    ],
+    "code_suggestion": "value = d.get('b', default_value)",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "IndexError",
+    "error_message": "list index out of range",
+    "file_location": "testing\\test.py",
+    "line_number": 47,
+    "error_explanation": "This error occurs when trying to access an index that is not available in the list, indicating that the index is greater than the list size.",
+    "related_code": "item = lst[5]",
+    "fixes": [
+      "Ensure the index is within the bounds of the list size before accessing it."
+    ],
+    "code_suggestion": "if len(lst) > 5: item = lst[5]",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "TypeError",
+    "error_message": "can only concatenate str (not 'int') to str",
+    "file_location": "testing\\test.py",
+    "line_number": 66,
+    "error_explanation": "This error occurs when trying to concatenate a string with a non-string type, in this case, an integer.",
+    "related_code": "result = 'string' + 5",
+    "fixes": [
+      "Convert the integer to a string before concatenation."
+    ],
+    "code_suggestion": "result = 'string' + str(5)",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "KeyError",
+    "error_message": "'C'",
+    "file_location": "testing\\sim_code_base.py",
+    "line_number": 99,
+    "error_explanation": "This error occurs when trying to access a column that does not exist in a DataFrame.",
+    "related_code": "value = df['C']  # Column doesn't exist",
+    "fixes": [
+      "Check if the column exists in the DataFrame before accessing it."
+    ],
+    "code_suggestion": "value = df.get('C', default_value)",
+    "confidence": "HIGH"
+  }
+]
