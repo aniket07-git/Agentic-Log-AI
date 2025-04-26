@@ -5,7 +5,7 @@ import logging
 
 # Import the LogAnalyzer class
 try:
-    from log_analyzer import LogAnalyzer
+    from log_analyser import LogAnalyzer
 except ImportError:
     # Handle the case where log_analyzer might not be found initially
     # You might need to adjust PYTHONPATH or ensure it's discoverable
