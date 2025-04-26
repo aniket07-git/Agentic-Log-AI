@@ -1,0 +1,254 @@
+[
+  {
+    "log_level": "ERROR",
+    "error_type": "FileNotFoundError",
+    "error_message": "[Errno 2] No such file or directory: 'non_existent_file.txt'",
+    "file_location": "testing\\test.py",
+    "line_number": 32,
+    "error_explanation": "The specified file does not exist in the directory, leading to this error when attempting to open it.",
+    "related_code": "with open('non_existent_file.txt', 'r') as f:",
+    "fixes": [
+      "Ensure the file exists before attempting to open it."
+    ],
+    "code_suggestion": "if os.path.exists('non_existent_file.txt'): with open('non_existent_file.txt', 'r') as f:",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "KeyError",
+    "error_message": "'b'",
+    "file_location": "testing\\test.py",
+    "line_number": 40,
+    "error_explanation": "This error occurs when trying to access a key that does not exist in a dictionary.",
+    "related_code": "value = d['b']",
+    "fixes": [
+      "Check if the key exists in the dictionary before accessing it."
+    ],
+    "code_suggestion": "value = d.get('b', default_value)",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "IndexError",
+    "error_message": "list index out of range",
+    "file_location": "testing\\test.py",
+    "line_number": 47,
+    "error_explanation": "This error occurs when trying to access an index that is not available in the list, indicating that the index is greater than the list size.",
+    "related_code": "item = lst[5]",
+    "fixes": [
+      "Ensure the index is within the bounds of the list size before accessing it."
+    ],
+    "code_suggestion": "if len(lst) > 5: item = lst[5]",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "AttributeError",
+    "error_message": "'int' object has no attribute 'append'",
+    "file_location": "testing\\test.py",
+    "line_number": 54,
+    "error_explanation": "This error occurs when trying to call a method that does not exist for the given object type, in this case, an integer instead of a list.",
+    "related_code": "x.append(5)",
+    "fixes": [
+      "Ensure that 'x' is a list before calling append on it."
+    ],
+    "code_suggestion": "x = []\n\nx.append(5)",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "ModuleNotFoundError",
+    "error_message": "No module named 'non_existent_module'",
+    "file_location": "testing\\test.py",
+    "line_number": 60,
+    "error_explanation": "This error occurs when trying to import a module that does not exist in the Python environment.",
+    "related_code": "import non_existent_module",
+    "fixes": [
+      "Ensure the module is installed and available in the Python environment."
+    ],
+    "code_suggestion": "# Ensure the module is installed\n# pip install non_existent_module",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "TypeError",
+    "error_message": "can only concatenate str (not 'int') to str",
+    "file_location": "testing\\test.py",
+    "line_number": 66,
+    "error_explanation": "This error occurs when trying to concatenate a string with a non-string type, in this case, an integer.",
+    "related_code": "result = 'string' + 5",
+    "fixes": [
+      "Convert the integer to a string before concatenation."
+    ],
+    "code_suggestion": "result = 'string' + str(5)",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "ValueError",
+    "error_message": "invalid literal for int() with base 10: 'not_a_number'",
+    "file_location": "testing\\test.py",
+    "line_number": 72,
+    "error_explanation": "This error occurs when trying to convert a string that does not represent a valid integer into an integer type.",
+    "related_code": "number = int('not_a_number')",
+    "fixes": [
+      "Ensure the string can be converted to an integer before attempting the conversion."
+    ],
+    "code_suggestion": "try:\n    number = int('not_a_number')\nexcept ValueError:\n    number = None",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "NameError",
+    "error_message": "name 'undefined_variable' is not defined",
+    "file_location": "testing\\test.py",
+    "line_number": 78,
+    "error_explanation": "This error occurs when trying to access a variable that has not been defined in the current scope.",
+    "related_code": "print(undefined_variable)",
+    "fixes": [
+      "Ensure the variable is defined before accessing it."
+    ],
+    "code_suggestion": "# Define the variable before using it\nundefined_variable = 'some value'\nprint(undefined_variable)",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "CustomError",
+    "error_message": "This is a custom error.",
+    "file_location": "testing\\test.py",
+    "line_number": 87,
+    "error_explanation": "This is a user-defined error that is raised intentionally in the code.",
+    "related_code": "raise CustomError(\"This is a custom error.\")",
+    "fixes": [
+      "Handle the custom error appropriately in the code."
+    ],
+    "code_suggestion": "try:\n    raise CustomError(\"This is a custom error.\")\nexcept CustomError as e:\n    print(e)",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "ValueError",
+    "error_message": "operands could not be broadcast together with shapes (3,) (2,2)",
+    "file_location": "testing\\sim_code_base.py",
+    "line_number": 94,
+    "error_explanation": "This error occurs when trying to perform operations on NumPy arrays with incompatible shapes.",
+    "related_code": "result = a + b  # Dimension mismatch",
+    "fixes": [
+      "Ensure the shapes of the arrays are compatible for the operation."
+    ],
+    "code_suggestion": "# Reshape or adjust the arrays to be compatible\n# a = np.array([[1, 2], [3, 4]])\n# b = np.array([[1, 2], [3, 4]])\nresult = a + b",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "KeyError",
+    "error_message": "'C'",
+    "file_location": "testing\\sim_code_base.py",
+    "line_number": 99,
+    "error_explanation": "This error occurs when trying to access a column that does not exist in a DataFrame.",
+    "related_code": "value = df['C']  # Column doesn't exist",
+    "fixes": [
+      "Check if the column exists in the DataFrame before accessing it."
+    ],
+    "code_suggestion": "value = df.get('C', default_value)",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "ConnectionError",
+    "error_message": "HTTPConnectionPool(host='nonexistent-domain-12345.com', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002699B456150>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')",
+    "file_location": "testing\\sim_code_base.py",
+    "line_number": 108,
+    "error_explanation": "This error occurs when trying to connect to a server that is unreachable or does not exist.",
+    "related_code": "response = requests.get('http://nonexistent-domain-12345.com', timeout=1)",
+    "fixes": [
+      "Check the URL and ensure the server is reachable."
+    ],
+    "code_suggestion": "# Ensure the URL is correct\nresponse = requests.get('http://valid-url.com', timeout=1)",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "OperationalError",
+    "error_message": "no such table: nonexistent_table",
+    "file_location": "testing\\sim_code_base.py",
+    "line_number": 114,
+    "error_explanation": "This error occurs when trying to access a database table that does not exist.",
+    "related_code": "cursor.execute(\"SELECT * FROM nonexistent_table\")",
+    "fixes": [
+      "Ensure the table exists in the database before querying it."
+    ],
+    "code_suggestion": "# Check the database schema\n# cursor.execute(\"CREATE TABLE nonexistent_table (id INTEGER PRIMARY KEY)\")",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "ParseError",
+    "error_message": "no element found: line 1, column 39",
+    "file_location": "testing\\sim_code_base.py",
+    "line_number": 119,
+    "error_explanation": "This error occurs when trying to parse an XML string that is not well-formed.",
+    "related_code": "root = ET.fromstring(invalid_xml)",
+    "fixes": [
+      "Ensure the XML string is well-formed before parsing it."
+    ],
+    "code_suggestion": "# Correct the XML string\ninvalid_xml = '<root><element>Text</element></root>'",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "AttributeError",
+    "error_message": "'DeprecatedAPI' object has no attribute 'connect_to_server'",
+    "file_location": "testing\\sim_code_base.py",
+    "line_number": 133,
+    "error_explanation": "This error occurs when trying to call a method that does not exist on an object, indicating that the method has been removed or renamed.",
+    "related_code": "api.connect_to_server()  # This method doesn't exist, simulating renamed API",
+    "fixes": [
+      "Check the API documentation for the correct method to use."
+    ],
+    "code_suggestion": "# Use the correct method name\n# api.connect()",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "TypeError",
+    "error_message": "unsupported operand type(s) for +: 'int' and 'str'",
+    "file_location": "testing\\sim_code_base.py",
+    "line_number": 140,
+    "error_explanation": "This error occurs when trying to perform an operation on incompatible types, in this case, adding an integer and a string together.",
+    "related_code": "process_numbers(\"not a list\")",
+    "fixes": [
+      "Ensure the argument passed is of the correct type before processing it."
+    ],
+    "code_suggestion": "process_numbers([1, 2, 3])",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "FileNotFoundError",
+    "error_message": "[Errno 2] No such file or directory: '/path/to/nonexistent/file.txt'",
+    "file_location": "testing\\sim_code_base.py",
+    "line_number": 144,
+    "error_explanation": "This error occurs when trying to open a file that does not exist in the specified path.",
+    "related_code": "with open('/path/to/nonexistent/file.txt', 'r') as f:",
+    "fixes": [
+      "Ensure the file exists before attempting to open it."
+    ],
+    "code_suggestion": "if os.path.exists('/path/to/nonexistent/file.txt'):\n    with open('/path/to/nonexistent/file.txt', 'r') as f:",
+    "confidence": "HIGH"
+  },
+  {
+    "log_level": "ERROR",
+    "error_type": "PermissionError",
+    "error_message": "[Errno 13] Permission denied: 'C:\\Windows\\restricted_file.txt'",
+    "file_location": "testing\\sim_code_base.py",
+    "line_number": 154,
+    "error_explanation": "This error occurs when trying to access a file or directory without the necessary permissions.",
+    "related_code": "with open('C:\\Windows\\restricted_file.txt', 'w') as f:",
+    "fixes": [
+      "Ensure the program has the necessary permissions to access the file or directory."
+    ],
+    "code_suggestion": "# Run the script with elevated permissions\n# or change the file path to a writable location",
+    "confidence": "HIGH"
+  }
+]
