@@ -190,3 +190,4 @@ The dashboard will be available at [http://localhost:8501](http://localhost:8501
 ## License
 
 [Add your license information here]# Agentic-LogAI
+# Agentic-Log-AI
