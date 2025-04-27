@@ -4,12 +4,21 @@ A modern analytics Log Analyzer and Code Fix Tool built with Streamlit, featurin
 
 ## 📸 Screenshots
 
-![Dashboard Overview](assets/Screenshot%202025-04-25%20at%206.16.15%E2%80%AFPM.png)
+![Dashboard Overview](assets/Screenshot%202025-04-25%20at%206.16.15%!
+[screencapture-localhost-8501-2025-04-27-11_48_27](https://github.com/user-attachments/assets/a0237a10-f467-482a-99c5-5b83792d9514)
+E2%80%AFPM.png)
 ![Log Analysis](assets/Screenshot%202025-04-27%20at%2011.48.17%E2%80%AFAM.png)
 ![Error Patterns](assets/Screenshot%202025-04-27%20at%2011.48.50%E2%80%AFAM.png)
 ![Fix Recommendations](assets/Screenshot%202025-04-27%20at%2011.49.02%E2%80%AFAM.png)
 ![Comprehensive Dashboard](assets/screencapture-claude-ai-public-artifacts-b288c2b0-e2c2-491d-93f0-2b52f6fd6d22-2025-04-27-11_46_27.png)
 ![Settings Page](assets/Screenshot%202025-04-25%20at%205.59.08%E2%80%AFPM.png)
+![screencapture-localhost-8501-2025-04-27-11_50_09](https://github.com/user-attachments/assets/af6cf5b7-9bf1-438b-9ded-316145b45f9d)
+![screencapture-localhost-8501-2025-04-27-11_49_31](https://github.com/user-attachments/assets/7a54cf42-896c-42a3-ba53-b984d71b689f)
+![screencapture-claude-ai-public-artifacts-b288c2b0-e2c2-491d-93f0-2b52f6fd6d22-2025-04-27-11_47_33](https://github.com/user-attachments/assets/45d88d9d-b320-4dce-86ca-e6e36e399010)
+
+
+
+
 
 ## Prerequisites
 
