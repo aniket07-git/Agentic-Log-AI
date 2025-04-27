@@ -1,6 +1,15 @@
-# Spark Analytics Dashboard
+# Agentic-Log-AI
 
-A modern analytics dashboard built with Streamlit, featuring data visualization and analysis capabilities.
+A modern analytics Log Analyzer and Code Fix Tool built with Streamlit, featuring data visualization and analysis capabilities.
+
+## 📸 Screenshots
+
+![Dashboard Overview](assets/Screenshot%202025-04-25%20at%206.16.15%E2%80%AFPM.png)
+![Log Analysis](assets/Screenshot%202025-04-27%20at%2011.48.17%E2%80%AFAM.png)
+![Error Patterns](assets/Screenshot%202025-04-27%20at%2011.48.50%E2%80%AFAM.png)
+![Fix Recommendations](assets/Screenshot%202025-04-27%20at%2011.49.02%E2%80%AFAM.png)
+![Comprehensive Dashboard](assets/screencapture-claude-ai-public-artifacts-b288c2b0-e2c2-491d-93f0-2b52f6fd6d22-2025-04-27-11_46_27.png)
+![Settings Page](assets/Screenshot%202025-04-25%20at%205.59.08%E2%80%AFPM.png)
 
 ## Prerequisites
 
@@ -13,7 +22,7 @@ Before you begin, ensure you have the following installed on your system:
 1. Clone the repository:
 ```bash
 git clone <your-repository-url>
-cd spark
+cd Log AI
 ```
 
 2. Create and activate a virtual environment:
@@ -186,8 +195,3 @@ The dashboard will be available at [http://localhost:8501](http://localhost:8501
 3. Commit your changes
 4. Push to your branch
 5. Create a Pull Request
-
-## License
-
-[Add your license information here]# Agentic-LogAI
-# Agentic-Log-AI
