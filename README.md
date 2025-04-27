@@ -1,4 +1,4 @@
-# Agentic-Log-AI
+# Agentic LogAI Debugger
 
 A modern analytics Log Analyzer and Code Fix Tool built with Streamlit, featuring data visualization and analysis capabilities.
 
