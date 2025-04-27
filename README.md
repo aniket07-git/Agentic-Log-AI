@@ -5,8 +5,7 @@ A modern analytics Log Analyzer and Code Fix Tool built with Streamlit, featurin
 ## 📸 Screenshots
 
 ![Dashboard Overview](assets/Screenshot%202025-04-25%20at%206.16.15%!
-[screencapture-localhost-8501-2025-04-27-11_48_27](https://github.com/user-attachments/assets/a0237a10-f467-482a-99c5-5b83792d9514)
-E2%80%AFPM.png)
+![screencapture-localhost-8501-2025-04-27-11_48_27](https://github.com/user-attachments/assets/90ae05ea-0fac-4e64-a485-514ab49afe1d)
 ![Log Analysis](assets/Screenshot%202025-04-27%20at%2011.48.17%E2%80%AFAM.png)
 ![Error Patterns](assets/Screenshot%202025-04-27%20at%2011.48.50%E2%80%AFAM.png)
 ![Fix Recommendations](assets/Screenshot%202025-04-27%20at%2011.49.02%E2%80%AFAM.png)
